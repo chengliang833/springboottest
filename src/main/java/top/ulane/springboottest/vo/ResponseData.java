@@ -6,6 +6,7 @@ public class ResponseData <T> implements Serializable {
 	private int code;
 	private String msg;
 	private T data;
+	private String AFSF = "SFSDF12";
 	
 	public ResponseData() {
 		super();
@@ -35,6 +36,13 @@ public class ResponseData <T> implements Serializable {
 	}
 	public void setData(T data) {
 		this.data = data;
+	}
+
+	public String getAFSF() {
+		return AFSF;
+	}
+	public void setAFSF(String aFSF) {
+		AFSF = aFSF;
 	}
 	
 }
